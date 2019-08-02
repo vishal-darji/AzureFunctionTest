@@ -35,6 +35,7 @@ namespace AzureFunctionTest
             return new OkObjectResult(items);
         }
 
+
         [FunctionName("GetTodoById")]
         public static IActionResult GetTodoById(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "todo/{id}")]HttpRequest req,
