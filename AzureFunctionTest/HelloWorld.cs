@@ -26,7 +26,7 @@ namespace AzureFunctionTest
             items.Add(todo);
             return new OkObjectResult(todo);
         }
-
+//
         [FunctionName("GetTodos")]
         public static IActionResult GetTodos(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "todo")]HttpRequest req, TraceWriter log)
